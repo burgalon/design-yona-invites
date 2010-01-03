@@ -5,26 +5,10 @@
 	{% nav_anchors nav request.META.PATH_INFO ""%}
 {% endblock %}
 
-{% block head %}
-	{{ block.super }}
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.1/swfobject.js"></script>
-	<style type="text/css">
-		.main_banner {
-			background:url({{ files.main_banner.get_file }}) no-repeat;
-		}
-		.page_home h2 {
-			background:url({{ files.mainHeadline.get_file }}) no-repeat;
-		}
-		.tag_interactive { 
-			background:url({{ files.tag_interactive.get_file }}) no-repeat;
-		}
-		.tag_print {
-			background:url({{ files.tag_print.get_file }}) no-repeat;
-		}
-	</style>
-{% endblock %}
-
 {% block footer_portfolio %}
 	{{ block.super }}
 	{{ dic.footer }}
+{% endblock %}
+
+{% block item_description %}
 {% endblock %}
