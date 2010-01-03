@@ -11,6 +11,6 @@
 {% endblock %}
 
 {% block footer_portfolio %}
-	{{ block.super }}
+	<a href="{% firstof dic.parent_url portfolio.url %}">{{ portfolio.title }}</a>
 	{{ dic.footer }}
 {% endblock %}
