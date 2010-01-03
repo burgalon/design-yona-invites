@@ -2,3 +2,6 @@
 {% load markup %}
 {% load utils %}
 {% block bodyClass %}{{ block.super }}{% for t in item.tags_list %} page_{{t.tag|english}}{% endfor %}{% endblock %}
+
+{% block item_description %}
+{% endblock %}
