@@ -5,6 +5,11 @@
 	{% nav_anchors nav request.META.PATH_INFO ""%}
 {% endblock %}
 
+{% block head %}
+	{{ block.super }}
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.1/swfobject.js"></script>
+{% endblock %}
+
 {% block footer_portfolio %}
 	{{ block.super }}
 	{{ dic.footer }}
