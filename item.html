@@ -1,0 +1,4 @@
+{% extends "site/item.html" %}
+{% load markup %}
+{% load utils %}
+{% block bodyClass %}{{ block.super }}{% for t in item.tags_list %} page_{{t.tag|english}}{% endfor %}{% endblock %}

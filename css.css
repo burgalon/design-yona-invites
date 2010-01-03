@@ -1,0 +1,16 @@
+/** yonat-doal.com design **/
+body {background: black; color: white;}
+a {color: white;}
+.span-24, .container {width: 730px !important;}
+
+#header {}
+#navigation {display: none;}
+h1 {margin: 0; padding:0;}
+h2 {color: white; border-bottom: 2px solid #444; font-size: 14px; padding-bottom: 4px; padding-top: 6px;}
+#footer {text-align: center; color: #999;}
+#footer a {color: #999; text-decoration: none; font-weight: bold;}
+#footer-powered, #footer-powered a {color: #353535;}
+
+
+/************** Item Page **************/
+div.item_wrap {height: 411px; width: 730px;}
